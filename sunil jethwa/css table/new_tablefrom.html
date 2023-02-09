@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new table\from</title>
+    <link href="newtablefrom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div></div>
+    <table align="center" border="5" cellspacing="0" cellpadding="5">
+      <form method="post" action="sem.com">
+        <tr>
+          <th colspan="2">REGISTER FROM</th>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input
+              type="text"
+              name="nm"
+              required
+              pattern="[A_Z a-z]+"
+              title="only alphabet..!"/>
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="mail" required /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="key" required /></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td><input type="text" name="nm" required pattern="[0-9]{10}" title="enter your mobile number..!"></td>
+        </tr>
+        <tr>
+            <td>gender</td>
+            <td align="center"><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</td>
+        </tr>
+        <tr>
+            <td>Language:</td>
+            <td>
+            <select>
+                <option hidden>-->select language<--</option>
+                <option>ENGLISH</option>
+                <option>HINDI</option>
+                <option>GUJARATI</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>About:</td>
+            <td><textarea required placeholder="write about your self..."></textarea></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

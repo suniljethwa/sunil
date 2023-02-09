@@ -1,0 +1,12 @@
+div{
+    height: 150px;
+}
+body{
+    background: linear-gradient(45deg,purple,rgb(250, 116, 138));
+    
+    
+}
+table{
+    background: linear-gradient(orange,white,green);
+    color: darkslategray;
+}

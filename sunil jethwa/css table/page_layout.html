@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page lay out</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        li 
+        {
+            display: inline;
+            padding: 18px;
+        }
+        .x 
+        {
+            background-image: url(beach.jfif); 
+            height: 250px;
+            background-repeat:no-repeat ;
+            background-size: cover;
+        }
+        
+        p 
+        {
+            font-family: Pacifico;
+            font-size: 100px;
+            color: aliceblue;
+        }
+        .c
+        {
+            background-color: rgb(61, 132, 238);
+            color: white;
+            width: 150px;
+            height: 30px;
+            border: 0ch;
+        }
+        input{
+            height: 30px;
+            width: 350px;
+        }
+        .d
+        {
+            width: 100% ;
+            word-spacing: 50px;
+            padding-right: 50px ;
+            padding-top: 2  0px;
+            box-sizing: border-box;
+            color: white;
+        }
+        .td2
+        {
+            padding-left: 50px;
+            color: white;
+        }
+        button
+        {
+            height: 40px;
+            width: 80px;
+            background: orange;
+            border: none;
+        }
+    </style>
+</head>
+<body> 
+    <div class="x">
+        <table>
+        <tr>
+
+            <td class="td2">
+                Delux
+            </td>
+
+        <td align="right" class="d"> 
+        <button> Home </button>
+        <button>Room</button>
+        <button>Restaurant</button>
+        <button>About</button>
+        <button>blog</button>
+        <button>contact</button>
+    </td>
+    </tr>
+</table>
+        <p align="center">Send us a note</p>
+    </div>
+    <br><br>
+    <div align="center">
+    <table>
+        <form method="post" action="sem.org">
+        <tr>
+            <td>Your name*</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>Your Email address*</td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td>Massage*</td>
+        </tr>
+        <tr>
+            <td>
+        <textarea cols="46" rows="8"></textarea>
+        </td>
+    </tr>
+    <tr><td>
+        <br>
+    </td></tr>
+    <tr>
+        <td align="center"><input class="c" type="submit" value="SEND MASSAGE"></td>
+    </tr>
+</form>
+    </table>
+    
+</div>
+</body>
+</html>

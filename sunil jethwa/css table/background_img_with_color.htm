@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background img with table</title>
+    <style>
+      div {
+        height: 150px;
+      }
+      body {
+        background-image: url(Milky_Way_Galaxy_image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .table {
+        border: solid;
+        color: gold;
+      }
+      .input1 {
+        color: gold;
+        border: 2px solid white;
+        background: linear-gradient(45deg, red, green, blue, pink);
+      }
+      .input2 {
+        color: gold;
+        border: 2px solid white;
+        background: repeating-radial-gradient(red 30%, green, blue, pink);
+      }
+      .input3{
+        color: gold;
+        border: 2px solid white;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <table align="center" class="table">
+      <form>
+        <tr>
+          <th colspan="2">login from</th>
+        </tr>
+        <tr>
+          <td>USER NAME:</td>
+          <td>
+            <input
+              class="input1"
+              type="text"
+              name="got"
+              required
+              pattern="[A_Z a-z]+"
+              title="type your alphabet...!"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><b>Gmail:</b></td>
+          <td>
+            <input
+              class="input2"
+              type="email"
+              name="gmail"
+              required
+              title="enter your email add...!"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input class="input3"
+              type="password"
+              name="password"
+              required
+              title="min 9..!"
+            />
+          </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="submit" value="login">
+            <input type="reset">
+        </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
